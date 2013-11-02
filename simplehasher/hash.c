@@ -69,7 +69,7 @@ char *convertToString(int *hash, int length)
 {
 	char *result = malloc( sizeof(int) * length);
 
-	sprintf(result, "%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x",
+	sprintf(result, "%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x%.8x",
 			hash[0], hash[1], hash[2], hash[3],
 			hash[4], hash[5], hash[6], hash[7],
 			hash[8], hash[9], hash[10], hash[11],
@@ -77,4 +77,3 @@ char *convertToString(int *hash, int length)
 	return result;
 }
 	
-
